@@ -5,3 +5,35 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Room Ids start at 6
+
+Room.delete_all
+Furniture.delete_all
+
+Room.create(
+    name: 'Living Room'
+)
+
+Room.create(
+    name: 'Dining Room'
+)
+
+Room.create(
+    name: 'Bathroom'
+)
+
+Room.create(
+    name: 'Kitchen'
+)
+
+Room.create(
+    name: 'Bedroom'
+)
+
+Furniture.create(
+    name: 'Couch',
+    room_id: 6
+)
+
+
