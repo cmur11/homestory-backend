@@ -8,32 +8,50 @@
 
 # Room Ids start at 6
 
-Room.delete_all
-Furniture.delete_all
+Room.destroy_all
+Furniture.destroy_all
 
-Room.create(
+living_room = Room.create(
     name: 'Living Room'
 )
 
-Room.create(
+dining_room = Room.create(
     name: 'Dining Room'
 )
 
-Room.create(
+bathroom = Room.create(
     name: 'Bathroom'
 )
 
-Room.create(
+kitchen = Room.create(
     name: 'Kitchen'
 )
 
-Room.create(
+bedroom = Room.create(
     name: 'Bedroom'
 )
 
 Furniture.create(
     name: 'Couch',
-    room_id: 6
+    room: living_room
 )
 
+Furniture.create(
+    name: 'Dining Table',
+    room: dining_room
+)
 
+Furniture.create(
+    name: 'Vanity',
+    room: bathroom
+)
+
+Furniture.create(
+    name: 'Refrigerator',
+    room: kitchen
+)
+
+Furniture.create(
+    name: 'Desk',
+    room: bedroom
+)
