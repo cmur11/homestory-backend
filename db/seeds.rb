@@ -48,7 +48,14 @@ Furniture.create(
 
 Furniture.create(
     name: 'Refrigerator',
-    room: kitchen
+    room: kitchen,
+    image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+)
+
+Furniture.create(
+    name: 'Stove',
+    room: kitchen,
+    image: 'https://images.unsplash.com/photo-1578845425669-b6562f83b11e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
 )
 
 Furniture.create(
