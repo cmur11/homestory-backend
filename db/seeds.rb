@@ -11,6 +11,10 @@
 Room.destroy_all
 Furniture.destroy_all
 
+melissa = User.create(
+    username: 'Melissa'
+)
+
 matt = User.create(
     username: 'Matt'
 )
@@ -38,6 +42,32 @@ kitchen = Room.create(
 bedroom = Room.create(
     name: 'Bedroom',
     user_id: 1
+)
+
+
+living_room_2 = Room.create(
+    name: 'Living Room',
+    user_id: 2
+)
+
+dining_room_2 = Room.create(
+    name: 'Dining Room',
+    user_id: 2
+)
+
+bathroom_2 = Room.create(
+    name: 'Bathroom',
+    user_id: 2
+)
+
+kitchen_2 = Room.create(
+    name: 'Kitchen',
+    user_id: 2
+)
+
+bedroom_2 = Room.create(
+    name: 'Bedroom',
+    user_id: 2
 )
 
 Furniture.create(
