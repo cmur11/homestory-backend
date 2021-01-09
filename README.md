@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# HomeStory
 
-Things you may want to cover:
+Homestory is a webapp for storing interested furniture items you plan on purchasing in the future or simply just want to keep tabs of.
 
-* Ruby version
+You will be able to create an account, login and add furnitures to your respective rooms. 
 
-* System dependencies
+The frontend is built with Javascript with custom CSS styling and Bootstrap for form styling. Animations were created using animejs library (https://animejs.com/).
 
-* Configuration
+The backend was built with Ruby using Rails as an API.
 
-* Database creation
+## Usage
 
-* Database initialization
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* How to run the test suite
+Please make sure to update tests as appropriate.
 
-* Services (job queues, cache servers, search engines, etc.)
+[Frontend Repo](https://github.com/matthewogtong/homestory-frontend)
 
-* Deployment instructions
-
-* ...
+## Creators
+[Matt Ogtong](https://github.com/matthewogtong)
+[Melissa Mach](https://github.com/thecodeplanner)
