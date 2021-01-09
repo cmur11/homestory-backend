@@ -9,20 +9,14 @@ class UsersController < ApplicationController
         render json: @user
     end
 
-    def login
-        @user = User.find(params[:id])
-
-        if @teacher
-            render json: @user
-        else
-            @new_user = User.create(username: params[:username])
-        end
-    end
-
     def create
-        @user = User.create!(username: params[:username])
-
-        render json: @user
+        @user = User.create!(user_params)
+        @living_room = Room.create!(name: 'Living Room', user_id: @user.id)
+        @dining_room = Room.create!(name: 'Dining Room', user_id: @user.id)
+        @bathroom = Room.create!(name: 'Bathroom', user_id: @user.id)
+        @kitchen = Room.create!(name: 'Kitchen', user_id: @user.id)
+        @bedroom = Room.create!(name: 'Bedroom', user_id: @user.id)
+        render json: @user 
     end
 
     private
